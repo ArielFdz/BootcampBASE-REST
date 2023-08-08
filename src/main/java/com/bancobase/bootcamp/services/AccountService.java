@@ -7,6 +7,9 @@ import com.bancobase.bootcamp.utils.Utils;
 
 import java.util.*;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class AccountService {
 
     private final AccountRepository accountRepository;

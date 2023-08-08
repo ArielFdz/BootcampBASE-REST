@@ -8,6 +8,9 @@ import com.bancobase.bootcamp.schemas.*;
 
 import java.util.*;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class CustomerService {
 
     private final AccountService accountService;
