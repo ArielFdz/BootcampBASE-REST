@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.bancobase.bootcamp.dto.CurrenciesDTO;
@@ -16,6 +17,7 @@ import com.bancobase.bootcamp.http.APIExchangeRateClient;
 
 @RestController
 @Service
+@CrossOrigin(origins = {"*"})
 public class CurrenciesService {
 
     private final APIExchangeRateClient api;
